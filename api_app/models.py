@@ -5,7 +5,7 @@ class Post(models.Model):
     tarehe = models.CharField(max_length=200)
     jina = models.CharField(max_length=200)
     maelezo = models.CharField(max_length=200)
-    muda = models.TimeField()
+    mmuda = models.TimeField()
     picha = models.ImageField(upload_to='uploads/')
     
     def __str__(self):

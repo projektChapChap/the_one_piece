@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('tarehe', models.CharField(max_length=200)),
                 ('jina', models.CharField(max_length=200)),
                 ('maelezo', models.CharField(max_length=200)),
-                ('muda', models.DateField()),
+                ('mmuda', models.DateField()),
                 ('picha', models.ImageField(upload_to='uploads/')),
             ],
         ),
