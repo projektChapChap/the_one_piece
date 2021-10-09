@@ -12,7 +12,7 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AlterField(
             model_name='post',
-            name='mmuda',
+            name='muda',
             field=models.TimeField(),
         ),
     ]
