@@ -29,8 +29,8 @@ class PostViews(APIView):
     
     
     
-    def patch(self, request, id=None):
-        item = Post.objects.get(id=id)
+    def patch(self, request, tarehe=None):
+        item = Post.objects.get(tarehe=tarehe)
         serializer = PostSerializer(item, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
@@ -40,7 +40,7 @@ class PostViews(APIView):
 
 
    
-    def delete(self, request, id=None):
-        item = get_object_or_404(Post, id=id)
+    def delete(self, request, tarehe=None):
+        item = get_object_or_404(Post, tarehe=tarehe)
         item.delete()
         return Response({"status": "success", "data": "Item Deleted"})
